@@ -1,0 +1,162 @@
+country,year,gdp_billion,gdp_unit
+Brazil,2000,655.45,billion USD
+Brazil,2001,559.98,billion USD
+Brazil,2002,509.8,billion USD
+Brazil,2003,558.23,billion USD
+Brazil,2004,669.29,billion USD
+Brazil,2005,891.63,billion USD
+Brazil,2006,1107.63,billion USD
+Brazil,2007,1397.11,billion USD
+Brazil,2008,1695.86,billion USD
+Brazil,2009,1667.0,billion USD
+Brazil,2010,2208.84,billion USD
+Brazil,2011,2616.16,billion USD
+Brazil,2012,2465.23,billion USD
+Brazil,2013,2472.82,billion USD
+Brazil,2014,2456.04,billion USD
+Brazil,2015,1802.21,billion USD
+Brazil,2016,1795.69,billion USD
+Brazil,2017,2063.51,billion USD
+Brazil,2018,1916.93,billion USD
+Brazil,2019,1873.29,billion USD
+Brazil,2020,1476.11,billion USD
+Brazil,2021,1670.65,billion USD
+Brazil,2022,1951.92,billion USD
+China,2000,1223.75,billion USD
+China,2001,1355.04,billion USD
+China,2002,1489.82,billion USD
+China,2003,1683.9,billion USD
+China,2004,1984.2,billion USD
+China,2005,2317.55,billion USD
+China,2006,2791.5,billion USD
+China,2007,3604.06,billion USD
+China,2008,4667.35,billion USD
+China,2009,5189.58,billion USD
+China,2010,6192.56,billion USD
+China,2011,7671.76,billion USD
+China,2012,8673.66,billion USD
+China,2013,9743.12,billion USD
+China,2014,10674.53,billion USD
+China,2015,11280.81,billion USD
+China,2016,11456.02,billion USD
+China,2017,12537.56,billion USD
+China,2018,14147.77,billion USD
+China,2019,14560.17,billion USD
+China,2020,14996.41,billion USD
+China,2021,18201.7,billion USD
+China,2022,18316.77,billion USD
+Germany,2000,1966.98,billion USD
+Germany,2001,1966.38,billion USD
+Germany,2002,2102.35,billion USD
+Germany,2003,2534.72,billion USD
+Germany,2004,2852.32,billion USD
+Germany,2005,2893.39,billion USD
+Germany,2006,3046.31,billion USD
+Germany,2007,3484.06,billion USD
+Germany,2008,3808.79,billion USD
+Germany,2009,3479.8,billion USD
+Germany,2010,3468.15,billion USD
+Germany,2011,3824.83,billion USD
+Germany,2012,3597.9,billion USD
+Germany,2013,3808.09,billion USD
+Germany,2014,3965.8,billion USD
+Germany,2015,3423.57,billion USD
+Germany,2016,3537.78,billion USD
+Germany,2017,3763.09,billion USD
+Germany,2018,4052.01,billion USD
+Germany,2019,3957.21,billion USD
+Germany,2020,3940.14,billion USD
+Germany,2021,4348.3,billion USD
+Germany,2022,4163.6,billion USD
+Japan,2000,4968.36,billion USD
+Japan,2001,4374.71,billion USD
+Japan,2002,4182.85,billion USD
+Japan,2003,4519.56,billion USD
+Japan,2004,4893.12,billion USD
+Japan,2005,4831.47,billion USD
+Japan,2006,4601.66,billion USD
+Japan,2007,4579.75,billion USD
+Japan,2008,5106.68,billion USD
+Japan,2009,5289.49,billion USD
+Japan,2010,5759.07,billion USD
+Japan,2011,6233.15,billion USD
+Japan,2012,6272.36,billion USD
+Japan,2013,5212.33,billion USD
+Japan,2014,4896.99,billion USD
+Japan,2015,4444.93,billion USD
+Japan,2016,5003.68,billion USD
+Japan,2017,4930.84,billion USD
+Japan,2018,5040.88,billion USD
+Japan,2019,5117.99,billion USD
+Japan,2020,5054.07,billion USD
+Japan,2021,5039.15,billion USD
+Japan,2022,4262.46,billion USD
+Switzerland,2000,279.22,billion USD
+Switzerland,2001,286.58,billion USD
+Switzerland,2002,309.3,billion USD
+Switzerland,2003,362.08,billion USD
+Switzerland,2004,403.91,billion USD
+Switzerland,2005,418.28,billion USD
+Switzerland,2006,441.63,billion USD
+Switzerland,2007,490.74,billion USD
+Switzerland,2008,567.27,billion USD
+Switzerland,2009,554.21,billion USD
+Switzerland,2010,598.85,billion USD
+Switzerland,2011,715.89,billion USD
+Switzerland,2012,686.42,billion USD
+Switzerland,2013,706.23,billion USD
+Switzerland,2014,726.54,billion USD
+Switzerland,2015,694.12,billion USD
+Switzerland,2016,687.9,billion USD
+Switzerland,2017,695.2,billion USD
+Switzerland,2018,725.57,billion USD
+Switzerland,2019,721.37,billion USD
+Switzerland,2020,742.0,billion USD
+Switzerland,2021,815.31,billion USD
+Switzerland,2022,828.51,billion USD
+United Kingdom,2000,1665.53,billion USD
+United Kingdom,2001,1649.83,billion USD
+United Kingdom,2002,1785.73,billion USD
+United Kingdom,2003,2054.42,billion USD
+United Kingdom,2004,2421.53,billion USD
+United Kingdom,2005,2543.18,billion USD
+United Kingdom,2006,2708.44,billion USD
+United Kingdom,2007,3090.51,billion USD
+United Kingdom,2008,2929.41,billion USD
+United Kingdom,2009,2412.84,billion USD
+United Kingdom,2010,2485.48,billion USD
+United Kingdom,2011,2663.81,billion USD
+United Kingdom,2012,2707.09,billion USD
+United Kingdom,2013,2784.85,billion USD
+United Kingdom,2014,3064.71,billion USD
+United Kingdom,2015,2927.91,billion USD
+United Kingdom,2016,2689.11,billion USD
+United Kingdom,2017,2680.15,billion USD
+United Kingdom,2018,2871.34,billion USD
+United Kingdom,2019,2851.41,billion USD
+United Kingdom,2020,2696.78,billion USD
+United Kingdom,2021,3143.32,billion USD
+United Kingdom,2022,3114.04,billion USD
+United States,2000,10250.95,billion USD
+United States,2001,10581.93,billion USD
+United States,2002,10929.11,billion USD
+United States,2003,11456.45,billion USD
+United States,2004,12217.2,billion USD
+United States,2005,13039.2,billion USD
+United States,2006,13815.58,billion USD
+United States,2007,14474.23,billion USD
+United States,2008,14769.86,billion USD
+United States,2009,14478.07,billion USD
+United States,2010,15048.97,billion USD
+United States,2011,15599.73,billion USD
+United States,2012,16253.97,billion USD
+United States,2013,16880.68,billion USD
+United States,2014,17608.14,billion USD
+United States,2015,18295.02,billion USD
+United States,2016,18804.91,billion USD
+United States,2017,19612.1,billion USD
+United States,2018,20656.52,billion USD
+United States,2019,21539.98,billion USD
+United States,2020,21354.1,billion USD
+United States,2021,23681.17,billion USD
+United States,2022,26006.89,billion USD

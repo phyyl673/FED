@@ -1,0 +1,11 @@
+name: ps1-ex2
+channels: [conda-forge, defaults]
+dependencies:
+  - python=3.10
+  - pandas
+  - matplotlib
+  - jupyter
+  - requests
+  - pip
+  - pip:
+    - wbdata
