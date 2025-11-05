@@ -1,7 +1,15 @@
 import pandas as pd
 from pathlib import Path
+from typing import List, Optional, Union
 
-def load_gdp_data(filepath, countries=None, start_year=2000, end_year=2022, save_path=None):
+
+def load_gdp_data(
+    filepath: Union[str, Path],
+    countries: Optional[List[str]] = None,
+    start_year: int = 2000,
+    end_year: int = 2022,
+    save_path: Optional[Union[str, Path]] = None
+) -> pd.DataFrame:
     """
     Load and preprocess GDP data from a World Bank CSV file.
     Optionally save the cleaned data to a new CSV file.
@@ -11,8 +19,9 @@ def load_gdp_data(filepath, countries=None, start_year=2000, end_year=2022, save
     filepath : str or Path
         Path to the downloaded World Bank GDP CSV file.
     countries : list of str
-        List of countries to include (default: 
-        ['United States', 'United Kingdom', 'Brazil', 'Japan', 'China', 'Germany', 'Switzerland'])
+        List of countries to include (default:
+        ['United States', 'United Kingdom', 'Brazil',
+          'Japan', 'China', 'Germany', 'Switzerland'])
     start_year : int, optional
         First year to include (default: 2000)
     end_year : int, optional
@@ -30,7 +39,8 @@ def load_gdp_data(filepath, countries=None, start_year=2000, end_year=2022, save
     if not path.exists():
         raise FileNotFoundError(f"File not found: {path.resolve()}")
 
-    # 1. Read the CSV (skip the first 4 metadata rows typical for World Bank datasets)
+    # 1. Read the CSV (skip the first 4 metadata
+    # rows typical for World Bank datasets)
     df = pd.read_csv(path, skiprows=4)
 
     # 2. Use default list of countries if none are specified
@@ -66,7 +76,10 @@ def load_gdp_data(filepath, countries=None, start_year=2000, end_year=2022, save
     # 7. Rename columns for clarity
     df_long = df_long.rename(columns={"Country Name": "country"})
 
-    print(f"Loaded GDP data for {len(countries)} countries ({start_year}–{end_year}) from {path.name}")
+    print(
+        f"Loaded GDP data for {len(countries)}countries"
+        f"({start_year}–{end_year}) from {path.name}"
+        )
 
     # 8. Save cleaned data if requested
     if save_path:
@@ -78,11 +91,13 @@ def load_gdp_data(filepath, countries=None, start_year=2000, end_year=2022, save
     return df_long
 
 
-#define function of cleaning data 
+# define function of cleaning data
+
+
 def clean_gdp_data(
     df: pd.DataFrame,
-    fill_method: str | None = "interpolate",  
-    save_path: str | Path | None = None
+    fill_method: Optional[str] = "interpolate",
+    save_path: Optional[Union[str, Path]] = None
 ) -> pd.DataFrame:
     """
     Clean GDP data:
@@ -103,7 +118,8 @@ def clean_gdp_data(
     Returns
     -------
     pd.DataFrame
-        Cleaned DataFrame with columns ['country','year','gdp_billion','gdp_unit'].
+        Cleaned DataFrame with columns
+        ['country','year','gdp_billion','gdp_unit'].
     """
     out = df.copy()
 
@@ -112,7 +128,8 @@ def clean_gdp_data(
         out["gdp_usd"] = (
             out.sort_values(["country", "year"])
                .groupby("country", group_keys=False)["gdp_usd"]
-               .apply(lambda s: s.ffill() if fill_method == "ffill" else s.bfill())
+               .apply(lambda s: s.ffill()
+                      if fill_method == "ffill" else s.bfill())
         )
     elif fill_method == "interpolate":
         out["gdp_usd"] = (
@@ -127,7 +144,8 @@ def clean_gdp_data(
     out["gdp_unit"] = "billion USD"
 
     # 3️. Keep only clean columns
-    out = out[["country", "year", "gdp_billion", "gdp_unit"]].sort_values(["country", "year"])
+    out = out[["country", "year", "gdp_billion",
+               "gdp_unit"]].sort_values(["country", "year"])
 
     # 4️. Save if needed
     if save_path:
@@ -137,5 +155,3 @@ def clean_gdp_data(
         print(f" Cleaned data saved to {save_path.resolve()}")
 
     return out
-
-

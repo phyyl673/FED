@@ -8,9 +8,7 @@ df = load_gdp_data(
 )
 
 df_clean = clean_gdp_data(
-    df, 
-    fill_method="interpolate", 
+    df,
+    fill_method="interpolate",
     save_path="data_clean.csv"
 )
-
-
